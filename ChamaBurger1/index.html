@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChamaBurguer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -106,7 +108,8 @@
                 <span class="secao-rotulo">Nossa história</span>
                 <h2>Comida de boteco, com capricho de restaurante</h2>
                 <p>
-                    O Chama Burger começou numa churrasqueira de quintal, testando receitas com os amigos. Hoje, o método
+                    O Chama Burger começou numa churrasqueira de quintal, testando receitas com os amigos. Hoje, o
+                    método
                     continua o mesmo: carne grelhada na brasa, pão fresco do dia e ingredientes comprados na feira — só
                     que agora pra atender o bairro inteiro.
                 </p>
@@ -125,7 +128,8 @@
 
                 <article class="depoimento">
                     <img src="assets/images/avatar-pedro.jpg" alt="Foto de Pedro Costa" class="avatar">
-                    <p class="citacao">"Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."</p>
+                    <p class="citacao">"Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."
+                    </p>
                     <p class="autor">Pedro Costa <span>- cliente frequente</span></p>
                 </article>
 
@@ -133,7 +137,8 @@
 
                 <article class="depoimento">
                     <img src="assets/images/avatar-marina.jpg" alt="Foto de Marina Rocha" class="avatar">
-                    <p class="citacao">"O veggie surpreende até quem come carne. Peço toda semana com a galera do trabalho."</p>
+                    <p class="citacao">"O veggie surpreende até quem come carne. Peço toda semana com a galera do
+                        trabalho."</p>
                     <p class="autor">Marina Rocha <span>- cliente frequente</span></p>
                 </article>
 
@@ -141,7 +146,8 @@
 
                 <article class="depoimento">
                     <img src="assets/images/avatar-thiago.jpg" alt="Foto de Thiago Lima" class="avatar">
-                    <p class="citacao">"Pedi para um aniversário com 20 pessoas e todo mundo elogiou. Entrega rápida também."</p>
+                    <p class="citacao">"Pedi para um aniversário com 20 pessoas e todo mundo elogiou. Entrega rápida
+                        também."</p>
                     <p class="autor">Thiago Lima <span>- cliente frequente</span></p>
                 </article>
             </div>
@@ -156,25 +162,25 @@
             <form class="reserva-formulario" id="reservaFormulario">
 
                 <!--Adicionar nome-->
-                 <div class="linha-formulario">
+                <div class="linha-formulario">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                 </div>
+                </div>
 
-                 <!--Adionar telefone-->
-                 <div class="linha-formulario">
+                <!--Adionar telefone-->
+                <div class="linha-formulario">
                     <label for="telefone">Telefone</label>
                     <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
-                 </div>
+                </div>
 
-                 <!--Adicionar data-->
-                 <div class="linha-formulario">
+                <!--Adicionar data-->
+                <div class="linha-formulario">
                     <label for="data">Data</label>
                     <input type="date" id="data" name="data" required>
-                 </div>
+                </div>
 
-                 <!--Adicionar Número de pessoas-->
-                 <div class="linha-formulario">
+                <!--Adicionar Número de pessoas-->
+                <div class="linha-formulario">
                     <label for="pessoas">Número de pessoas</label>
                     <select name="pessoas" id="pessoas">
                         <option value="1">1 pessoa</option>
@@ -183,28 +189,56 @@
                         <option value="4">4 pessoas</option>
                         <option value="5+">5 pessoas ou mais</option>
                     </select>
-                 </div>
+                </div>
 
-                 <!--Adicionar observações-->
-                 <div class="linha-formulario linha-formulario-completo">
+                <!--Adicionar observações-->
+                <div class="linha-formulario linha-formulario-completo">
                     <label for="mensagem">Observações (opcional)</label>
-                    <textarea name="mensagem" id="mensagem" rows="3" placeholder="Alguma preferência ou retrição alimentar?"></textarea>
-                 </div>
+                    <textarea name="mensagem" id="mensagem" rows="3"
+                        placeholder="Alguma preferência ou retrição alimentar?"></textarea>
+                </div>
 
-                 <!-- Adicionar imagem e enviar formulário-->
-                 <div class="linha-formulario linha-formulario-completo">
+                <!-- Adicionar imagem e enviar formulário-->
+                <div class="linha-formulario linha-formulario-completo">
                     <label for="foto">Foto de referência (opcional)</label>
                     <input type="file" id="foto" name="foto" accept="image/*">
 
                     <img id="fotoPrevia" class="foto-previa" alt="Prévia da imagem selecionada" hidden>
                     <button type="submit" class="botao botao-primario formulario-enviar">Confirmar reserva</button>
-                 </div>
+                </div>
 
             </form>
+            <div class="reserva-confirmacao" id="reservaConfirmacao"></div>
         </section>
 
-
+        <section class="chamada-final" id="pedir">
+            <h2>Bateu fome?</h2>
+            <p>Peça pelo delivery ou venha comer no salão - abrimos todos os dias, das 18h à meia-noite.</p>
+            <a href="#" class="botao botao-destaque">Peça pelo WhatsApp</a>
+        </section>
     </main>
+
+    <footer class="rodape-site" id="contato">
+        <div class="rodape-info">
+            <p>&copy; 2026 Chama Burguer - Rua das Brasas, 123, São Caetano do Sul</p>
+            <p class="rodape-horario">Todos os dias, das 18h à meia-noite</p>
+        </div>
+
+        <ul class="rodape-links">
+            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+            <li><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
+            <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a></li>
+            <li><a href="#" aria-label="Ver no mapa"><i class="fa-solid fa-location-dot"></i><span>Ver no mapa</span></a></li>
+        </ul>
+    </footer>
+    
+    <!-- Carrinho de compras-->
+    <div class="carrinho-resumo" id="carrinhoResumo">
+        <span class="carrinho-icone"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span id="carrinhoContador">0</span> itens. <span id="carrinhoTotal">R$ 0,00</span>
+    </div>
+    
 </body>
 
 </html>
